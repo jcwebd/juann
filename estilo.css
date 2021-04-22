@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor{
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li{
+    padding: 1cm;
+}
+
+
+.banner{
+    padding: 1.5cm;
+    display: flex;
+    justify-content: center;
+}
+
+
+.primero{
+    background: red;
+    width: 30%;
+    padding: 2%;
+}
+
+.segundo{
+    background: cadetblue;
+    width: 30%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.tercero{
+    background: rgb(102, 161, 94);
+    width: 30%;
+    padding: 2%;
+    box-sizing: border-box;
+}
+
+.header{
+    background: pink;
+    color: black;
+    padding: 0.5cm 3cm;
+    margin-bottom: 2cm;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 45%;
+    height: 45%;
+}
+
+.footer{
+    margin-top: 4cm;
+    border-top: 5px solid white;
+    padding:2cm 3cm;
+    display: flex;
+    justify-content: space-between;
+}
+
+.data{
+    background: beige;
+    padding: 2cm;
+    color: black;
+    border-radius: 10%;
+}
+
+.mapa{
+    width: 60%;
+}
+
+@media screen and (min-width:660) and (max-width:1200px) {
+    
+    body{
+        background: rgb(212, 212, 115);
+    }
+}
+
+
+@media screen and (min-width:660px) and (max-width:960px){
+    body{
+        background: burlywood;
+    }
+
+    header{
+        flex-wrap: wrap;
+    }
+
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner{
+        display: none;
+    }
+
+    .primero{
+        width: 100%;
+        padding: 2cm;
+    }
+
+    .primero figure{
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .segundo,  .tercero{
+        width: 100px;%
+        padding: 2cm;
+    }
+
+    #contenedor article h2{
+        font-size: 2cm;
+    }
+
+    p{
+        font-size: 1.3cm;
+    }
+
+
+}
